@@ -1,0 +1,125 @@
+@import url(variable.css);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "SF-Pro-Text-Regular";
+}
+
+body{
+    background: rgb(31, 31, 43);
+    background-image: url("../storage/img/fondo.png");
+}
+.header{
+    width: 100%;
+    padding: 0 .5em;
+    margin: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.header_logo{
+    display: flex;
+    align-items: center;
+
+}
+
+.logo_icono img{
+    width: 3em;
+    height: 22px;
+}
+
+.logo_titulo{
+    color: var(--color-ternario);
+    font-family: "SF-Pro-Text-Bold";
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.header_menu{
+    margin: 22px;
+    color: var(--color-ternario);
+}
+
+.header_menu img{
+    height: 20px;
+}
+
+
+.tituloCard{
+    color: var(--color-ternario);
+    margin-left: 10px;
+    margin-top: 30px;
+    
+}
+
+.tituloCard h2 p{
+    font-family: "SF-Pro-Text-Light";
+    text-transform: capitalize;
+
+}
+.tituloCard h2{
+    font-size: 45px;
+    margin: 10px;
+
+}
+
+.tituloCard p{
+    font-size: 38px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+
+}
+
+.tituloBalance{
+    margin: 10px;
+    display: flex;
+    height: 120px;
+    justify-content: space-between;
+    align-items: center;
+    padding:  0 0.3em;
+}
+
+.balance1, .balance2 {
+    display: flex;
+    flex-direction: column;
+    font-family: "SF-Pro-Text-Bold";
+    color: white;
+}
+
+.tituloBalance label {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.tituloBalance small{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* PARTE DEL FOOTER*/
+.footer{
+    width: 100%;
+    background: var(--color-primario);
+    position: fixed;
+    bottom: 0;
+}
+
+.footer ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer ul li{
+    list-style: none;
+    margin: .5em 0;
+}
+
+.footer ul li a img{
+    width: 2em;
+}
+
