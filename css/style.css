@@ -63,20 +63,20 @@ body{
 
 }
 .tituloCard h2{
-    font-size: 45px;
+    font-size: 40px;
     margin: 10px;
 
 }
 
 .tituloCard p{
-    font-size: 38px;
+    font-size: 36px;
     margin-left: 10px;
     margin-bottom: 0px;
 
 }
 
 .tituloBalance{
-    margin: 10px;
+    margin: 20px;
     display: flex;
     height: 120px;
     justify-content: space-between;
@@ -87,18 +87,44 @@ body{
 .balance1, .balance2 {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     font-family: "SF-Pro-Text-Bold";
     color: white;
+}
+
+.balance1{
+    width: 200px;
+    padding-right: 30px;
+}
+
+.progress-bar{
+    width: 100%;
+    height: 6px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress{
+    height: 100%;
+}
+
+.balance2{
+    width: 200px;
+    padding-left: 30px;
 }
 
 .tituloBalance label {
     font-size: 25px;
     font-weight: bold;
+    margin-bottom: 5px;
 }
 
 .tituloBalance small{
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+
 }
 
 /* PARTE DEL FOOTER*/
