@@ -127,6 +127,61 @@ body{
 
 }
 
+/* CAJA BLANCA */
+
+.bodyWhite{
+    width: 100%;
+    background: #fffffff3;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "SF-Pro-Text-RegularItalic";
+}
+
+.activities{
+    display: flex;
+    justify-content: space-between;
+}
+.activities .boxAct{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.h1Top{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.caja{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--color-ternario);
+    border-radius: 8px;
+    width: 100px;
+    height: 130px;
+    
+}
+
+.caja img{
+    
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+.caja h2{
+    font-size: 18px;
+    font-weight:400px;
+}
 /* PARTE DEL FOOTER*/
 .footer{
     width: 100%;
