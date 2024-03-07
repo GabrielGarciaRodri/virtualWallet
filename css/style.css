@@ -131,20 +131,19 @@ body{
 
 .bodyWhite{
     width: 100%;
-    background: #fffffff3;
-    border-radius: 20px;
+    height: 100%;
+    background: var(--color-ternario);
+    border-radius: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     font-family: "SF-Pro-Text-RegularItalic";
+    overflow-y: scroll;
+
 }
 
-.activities{
-    display: flex;
-    justify-content: space-between;
-}
-.activities .boxAct{
+.boxAct{
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -156,10 +155,16 @@ body{
     width: 100%;
     display: flex;
     justify-content: flex-start;
+    padding: 15px;
+    padding-bottom: 0;
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 1.5em;
 }
 .caja{
     margin: 10px;
     display: flex;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -171,7 +176,7 @@ body{
 }
 
 .caja img{
-    
+
     margin-bottom: 10px;
     display: flex;
     align-items: center;
@@ -182,6 +187,53 @@ body{
     font-size: 18px;
     font-weight:400px;
 }
+
+/* PARTE DEL BODY TRANSACTIONS */
+
+.transactions{
+    width: 90%;
+    height: 100px;
+    margin: 20px;
+
+}
+.h1Trans{
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    margin-bottom: 0;
+    font-size: 1.5em;
+}
+
+
+
+.cajaTrans{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5px;
+    padding: 10px;
+    font-size: 10px;
+    overflow-y: scroll;
+
+}
+
+.cajaTrans i{
+    font-size: 20px;
+}
+.cajaTrans .contabilidad{
+    margin-left: 60px;
+}
+
+
+
+
+
+
+
+
+
 /* PARTE DEL FOOTER*/
 .footer{
     width: 100%;
