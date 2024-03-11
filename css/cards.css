@@ -18,6 +18,8 @@
     position: sticky;
     z-index: 2;
     top: 0;
+    color: var(--color-primario);
+
 }
 
 .header_logo{
@@ -31,6 +33,8 @@
 .logo_icono img{
     width: 3em;
     height: 22px;
+    color: var(--color-primario);
+
 }
 
 .logo_titulo{
@@ -38,15 +42,17 @@
     font-family: "SF-Pro-Text-Bold";
     font-weight: bold;
     text-transform: uppercase;
+
 }
 
 .header_menu{
     margin: 22px;
-    color: var(--color-ternario);
+    color: var(--color-primario);
 }
 
 .header_menu img{
     height: 20px;
+    color: var(--color-primario);
 }
 
 /* MAIN */

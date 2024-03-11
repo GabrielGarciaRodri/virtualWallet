@@ -7,6 +7,7 @@
     font-family: "SF-Pro-Text-Regular";
 }
 
+
 .header{
     width: 100%;
     padding: 0 .5em;
@@ -15,7 +16,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
-    position: sticky;
+    position: fixed;
     z-index: 2;
     top: 0;
 }
@@ -51,9 +52,9 @@
 
 /* MAIN */
 .main{
-    overflow-y: scroll;
     grid-gap: 10px;
     height: 100%;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
@@ -74,6 +75,9 @@
     display: flex;
     align-items: center;
     bottom: 75%;
+    top: -400;
+    right: 0;
+    left: 0;
     background: var(--color-primario);
     z-index: -2;
     width: 100%;
@@ -119,7 +123,7 @@
 .opciones button{
     border-radius: 50px;
     font-size: .9em;
-    padding: 8px 20px;
+    padding: 8px 30px;
     font-family: "SF-Pro-Text-Regular";
     text-transform: capitalize;
     
@@ -134,14 +138,14 @@
 .opciones .button2{
     background: var(--color-ternario);
     color: var(--color-secundario);
-    border-color: var(--color-secundario);
+    border: 1.5px solid var(--color-secundario);
 }
 
 .opciones .button3{
     border-color: aliceblue;
     background: var(--color-ternario);
     color: var(--color-cuarto);
-    border-color: var(--color-ternario);
+    border: 1.5px solid var(--color-cuarto);
 }
 
 
@@ -161,21 +165,25 @@
 }
 
 .anuncio{
+    border: 1px solid black;
+    width: 100%;
     background-color: var(--color-quinto);
     grid-area: anuncio;
 }
 
 .bannerAnuncio{
     display: grid;
+    height: 110px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     grid-template-areas:
-    "imange contenido"
+    "imagen contenido"
     ;
+    overflow-y: scroll;
 }
 
 .imagen1{
-    grid-area: imange;
+    grid-area: imagen;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -186,13 +194,6 @@
     width: 150px;
     height: 100px;
 }
-
-.contenido{
-    grid-area: contenido;
-    overflow-y: scroll;
-}
-
-
 .contenido small{
     font-family: "SF-Pro-Text-Regular";
     color: var(--color-cuarto);
